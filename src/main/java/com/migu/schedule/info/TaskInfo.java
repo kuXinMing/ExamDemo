@@ -10,6 +10,14 @@ public class TaskInfo
 {
     private int taskId;
     private int nodeId;
+    private int consumption;
+    public int getConsumption()
+    {
+        return consumption;
+    }
+    public void setConsumption(int consumption){
+        this.consumption = consumption;
+    };
     public int getNodeId()
     {
         return nodeId;
@@ -26,6 +34,6 @@ public class TaskInfo
     @Override
     public String toString()
     {
-        return "TaskInfo [taskId=" + taskId + ", nodeId=" + nodeId + "]";
+        return "TaskInfo [taskId=" + taskId + ", nodeId=" + nodeId+ ", consumption=" + consumption + "]";
     }
 }
